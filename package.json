@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"chart.js": "^4.4.0",
 		"ol": "^8.0.0",
 		"svelte-mapbox-gl": "^0.2.2"
 	}

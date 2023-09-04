@@ -1,5 +1,6 @@
 <script>
     import Nav from "../../components/nav.svelte";
+    import Chart from "../../components/chart.svelte";
 
     import { onMount } from 'svelte';
   
@@ -53,11 +54,13 @@
       {/each}
     </tbody>
   </table>
+
+  <Chart></Chart>
   
 
   <style>
     table {
-      width: 50%;
+      width: 100%;
       border-collapse: collapse;
       margin-bottom: 20px;
     }

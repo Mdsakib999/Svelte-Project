@@ -8,11 +8,11 @@
   import VectorLayer from 'ol/layer/Vector';
   import VectorSource from 'ol/source/Vector';
   import { Fill, Style } from 'ol/style';
-  import XYZ from 'ol/source/XYZ'; // Add this import
+  import XYZ from 'ol/source/XYZ'; 
 
   let map;
 
-  // Function to load and style the GeoJSON layer
+  
   function loadGeoJSON() {
     const geoJSONURL =
       'https://api.maptiler.com/maps/ocean/style.json?key=2cQDUAas6s87tttcg6tW';
@@ -26,7 +26,7 @@
       source: vectorSource,
       style: new Style({
         fill: new Fill({
-          color: 'rgba(0, 106, 78, 0.75)', // #006a4e with 0.75 opacity
+          color: 'rgba(0, 106, 78, 0.75)',
         }),
       }),
     });
@@ -35,7 +35,7 @@
   }
 
   onMount(() => {
-    // Create and configure the map
+    
     map = new Map({
       target: 'map',
       layers: [
@@ -51,7 +51,7 @@
       }),
     });
 
-    // Load and style the GeoJSON layer
+    
     loadGeoJSON();
   });
 
@@ -59,15 +59,13 @@
 </script>
 
 <Nav></Nav>
-<h1>this is Map</h1>
-
-
+<h1 class="mt-4 mb-6 text-center text-3xl font-bold">This is Map Page</h1>
 
 <div id="map"></div>
 
 
 <style>
-    /* Define a CSS class to style the map container */
+
     #map {
         width: 100%;
         height: 100vh;
